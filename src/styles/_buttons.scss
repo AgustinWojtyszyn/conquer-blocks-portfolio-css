@@ -1,0 +1,22 @@
+@use './variables' as v;
+
+.btn {
+    color: v.$white;
+    font-family: 'Space Grotesk Bold';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 2.3px;
+    background-color: v.$black;
+    border-style: none none solid none;
+    border-color: v.$green;
+
+    &:hover {
+        color: v.$green;
+        transition: color 0.5s ease-in-out;
+    }
+    &:not(:hover) {
+        color: v.$white;
+        transition: color 0.5s ease-in-out;
+    }
+}
